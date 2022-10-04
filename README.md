@@ -1,8 +1,8 @@
 # Functional Programming
 
-Author: Barybin Volodymyr
-Group: IPZ-44
-University: Taras Shevchenko National University of Kyiv
+Author: Barybin Volodymyr<br/>
+Group: IPZ-44<br/>
+University: Taras Shevchenko National University of Kyiv<br/>
 Lector: [Ковалюк Тетяна Володимирівна](https://github.com/tkovalyuk)
 
 ## Content
