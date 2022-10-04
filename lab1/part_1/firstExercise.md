@@ -34,7 +34,7 @@
 
 ## Посилання на проект з вихідним кодом
 
-https://
+[https://](https://github.com/Iangyl/functional-programming/blob/main/lab1/part_1/lab1.1.rkt)
 
 ## Результати
 
