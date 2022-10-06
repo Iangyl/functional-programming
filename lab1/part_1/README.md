@@ -13,28 +13,35 @@
 
 ![формула рекурентного означення функції](https://github.com/Iangyl/functional-programming/blob/main/lab1/images/pic1.png)
 
-## Структура програми
-
 ## Обгрунтування вибору середовища та мови функціонального програмування
 
-Обрав одну із мов, яка вимагається дисципліною.
+Середовище програмування: Visual Studio Code <br/><br/>
+
+Безкоштовний та зручний редактор коду, який можна використовувати майже для будь-якої мови програмування, а також можна використовувати в комерційних цілях.
+Має широкий спектр налаштувань та можливостей, які надають плагіни, для поліпшення процесу розробки в плані комфорту та швидкості.<br/>
+Мова функціонального програмування: Haskell
 
 ## Структура програми (HIPO діаграма)
 
+![блок-схема](https://github.com/Iangyl/functional-programming/blob/main/lab1/images/scheme1.png)
+
 ## Код програми з коментарями
 
-```racket
-#lang racket
+```haskell
+func :: Integral p => p -> p -- Integral typeclass is a type that denotes all integer types in haskell: Integer, Int, Int64
+func 0 = 0 -- if user enter zero than the answer would be zero too, aka overloading
+func n = (n `mod` 10) + func (n `div` 10)
 
-(define (answer n)
-  (if (= n 0)
-      0
-      (+ (modulo n 10) (answer (/ (- n (modulo n 10)) 10)))))
+firstTask = do
+    putStrLn "Input the number"
+    input <- getLine -- receiving information from user to variable
+    let a = read input :: Integer -- reading and converting received info from user
+    print (func a)
 ```
 
 ## Посилання на проект з вихідним кодом
 
-https://github.com/Iangyl/functional-programming/blob/main/lab1/part_1/lab1.1.rkt
+https://github.com/Iangyl/functional-programming/blob/main/lab1/part_2/lab1.1.hs
 
 ## Результати
 
@@ -49,5 +56,4 @@ https://github.com/Iangyl/functional-programming/blob/main/lab1/part_1/lab1.1.rk
 
 ## Висновки
 
-В ході роботи дізнався, що функція сама зберігає та акумулює значення, було складно про це пам'ятати, тому що завжди працював з імперативними мовами програмування.
-Також в ході тестування віднайшов помилку в обчисленні, яку виправив перед написанням звіту.
+В ході роботи  було написано програму, що знаходить суму цифр введеного числа за допомогою рекурсивного процесу.
