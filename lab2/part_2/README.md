@@ -45,7 +45,7 @@ https://github.com/Iangyl/functional-programming/blob/main/lab2/part_1/lab2.1.hs
 
 ## Результати
 
-![результати](https://github.com/Iangyl/functional-programming/blob/main/lab2/images/results1.png)
+![результати](https://github.com/Iangyl/functional-programming/blob/main/lab2/images/results2.png)
 
 ## Висновки
 
