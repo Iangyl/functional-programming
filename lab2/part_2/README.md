@@ -41,7 +41,7 @@ main = do
 
 ## Посилання на проект з вихідним кодом
 
-https://github.com/Iangyl/functional-programming/blob/main/lab2/part_1/lab2.1.hs
+https://github.com/Iangyl/functional-programming/blob/main/lab2/part_2/lab2.2.hs
 
 ## Результати
 
