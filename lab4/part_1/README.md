@@ -45,7 +45,7 @@ getMean list = ceiling (fromIntegral (sum list) / fromIntegral (length list))
 replaceEvenWithMean:: [Int] -> [Int]
 replaceEvenWithMean list = [ if even x then getMean list else x | x <- list]
 
-firstTask = do
+main = do
     putStrLn "Input length of list"
     input <- getLine
     let length = read input :: Int

@@ -1,4 +1,6 @@
 
+import Data.List
+
 showIdle :: Show a => a -> [Char]
 showIdle idle = "The idle is " ++ show idle ++ " hours"
 
@@ -24,7 +26,7 @@ showTrain train = unlines [
     "-------------"
   ]
 
-secondTask = do
+main = do
   -- (car type, cars quantity, interval, idle time)
   let trains = [[1, 7, 24, 3], [0, 8, 36, 2]]
   putStrLn (unlines [showTrain x | x <- trains])
