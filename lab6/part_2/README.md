@@ -22,13 +22,22 @@
 ## Код програми
 
 ```haskell
-showReverse :: Integral a => [a] -> a -> [a] showReverse stack m = filter (\x -> xmod` m /= 0) (reverse stack)
+showReverse :: Integral a => [a] -> a -> [a]
+showReverse stack m = filter (\x -> x `mod` m /= 0) (reverse stack)
 
-main = do let stack = [10, 9 .. 1] putStrLn "Stack:" print stack
+main = do
+  let stack = [10, 9 .. 1] 
 
-putStrLn "Input the number" input <- getLine let m = read input :: Int
+  putStrLn "Stack:" 
+  print stack
 
-putStrLn "Reverse stack:" print (showReverse stack m)
+  putStrLn "Input the number"
+  input <- getLine
+  
+  let m = read input :: Int
+
+  putStrLn "Reverse stack:"
+  print (showReverse stack m)
 ```
 
 ## Посилання на проект з вихідним кодом
